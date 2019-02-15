@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "crypto-portfolio",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -7,7 +7,9 @@
   },
   "dependencies": {
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

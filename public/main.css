@@ -1,0 +1,58 @@
+#valuation {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#sort {
+  font-weight: bold;
+  min-width: 80px;
+}
+
+#control-panel .item {
+  align-self: baseline;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.item.header {
+  padding-left: 0 !important;
+}
+
+.secondary.menu,
+.item.header {
+  margin-left: 0 !important;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+small {
+  color: grey;
+}
+
+.input {
+  width: 100%;
+}
+
+.ui.container {
+  max-width: 800px !important;
+}
+
+.ui.secondary.menu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #control-panel {
+    display: flex;
+    flex-direction: column;
+  }
+}
