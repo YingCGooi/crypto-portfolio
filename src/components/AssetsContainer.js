@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 
 import SearchAssetPanel from './AssetSearch/SearchAssetPanel';
 import EditAssetPanel from './AssetEdit/EditAssetPanel';
-import AssetsControlPanel from './AssetsHome/ControlPanel';
-import AssetsTable from './AssetsHome/Table';
+import AssetsControlPanel from './AssetsHome/AssetsControlPanel';
+import AssetsTable from './AssetsHome/AssetsTable';
 
 class AssetsContainer extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class AssetsContainer extends React.Component {
         return (
           <section className='ui blue segment'>
             <AssetsControlPanel />
-            <AssetsTable />
+            <AssetsTable assets={this.props.assets} />
           </section>
         )
       case 'search':
@@ -29,6 +29,7 @@ class AssetsContainer extends React.Component {
 const mapStateToProps = (state) => (
   {
     show: state.show,
+    assets: state.assets,
   }
 );
 
