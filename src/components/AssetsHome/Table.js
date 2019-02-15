@@ -1,6 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-export default () => (
+const Table = (props) => (
   <table className='ui selectable unstackable table'>
     <thead>
       <tr>
@@ -20,3 +21,11 @@ export default () => (
     </tbody> 
   </table>
 )
+
+const mapStateToProps = (state) => (
+  {
+    assets: state.assets
+  }
+)
+
+export default connect(mapStateToProps)(Table);
